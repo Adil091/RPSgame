@@ -94,15 +94,18 @@ username2
 password2
 ```
 or  run the RPS_account_setup file using given below command and it will store the info in a new file
-```
+```bash
 python RPS_account_setup.py
 ```
+<img width="601" height="242" alt="image" src="https://github.com/user-attachments/assets/f1d3e9c1-2d74-4f17-9eba-4075d3904251" />
+
 
 #### **3️⃣ Run the Game**
 
 ```bash
 python main.py
 ```
+<img width="1039" height="814" alt="image" src="https://github.com/user-attachments/assets/3f62c6fe-0bfa-44fc-86dc-29be1ade95e1" />
 
 ---
 
