@@ -32,3 +32,74 @@ while True:
           print("Can you beat the computer?")
           print("Good luck!!")
           print("-------------------------------------------------")
+          while True:
+            rps = input("Enter your choice (rock, paper, scissor): ")
+            import random
+            computer = ("rock", "paper", "scissor")
+            computer = random.choice(computer)
+            # rock if statement
+            if rps == "rock" and computer == "paper":
+              print("The computer choice",computer)
+              print("")
+              print(loose)
+              print("")
+              print("")
+              lives -= 1
+            if rps == "rock" and computer == "scissor":
+              print("The computer choice",computer)
+              print("")
+              print(Win)
+              print("")
+              print("")
+              score += 1
+            # paper if statement
+            if rps == "paper" and computer == "rock":
+              print("The computer choice",computer)
+              print("")
+              print(loose)
+              print("")
+              print("")
+              lives += 1
+            if rps == "paper" and computer == "scissor":
+              print("The computer choice",computer)
+              print("")
+              print(Win)
+              print("")
+              print("")
+              score -= 1
+            # scissor if statement
+            if rps == "scissor" and computer == "rock":
+              print("The computer choice",computer)
+              print("")
+              print(loose)
+              print("")
+              print("")
+              lives -= 1
+            if rps == "scissor" and computer == "paper":
+              print("The computer choice",computer)
+              print("")
+              print(Win)
+              print("")
+              print("")
+              score += 1
+            # duplicates
+            if rps == computer:
+              print("The computer choice",computer)
+              print("")
+              print("It's a draw!")
+              print("")
+              print("")
+              drew += 1
+            # system
+            if rps == "rules":
+              print("-------------------------------------------------")
+              print("Game Rules:")
+              print("-------------------------------------------------")
+              print("1. Rock beats Scissors")
+              print("2. Rock loses to Paper")
+              print("3. Paper beats Rock")
+              print("4. Paper loses to Scissors")
+              print("5. Scissors beats Paper")
+              print("6. Scissors loses to Rock")
+              print("-------------------------------------------------")
+              
