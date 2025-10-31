@@ -33,46 +33,6 @@ It runs entirely in the terminal and offers a nostalgic gaming experience while 
 
 ---
 
-#### 2️⃣ **Lives/Score Updates Not Working Properly**
-
-**Problem:** Score or lives didn’t change as expected for some moves.
-**Cause:** Wrong conditions and inconsistent increment/decrement logic.
-**Solution:** Cleaned and standardized the win/loss/draw handling for each move.
-
----
-
-#### 3️⃣ **Git Index Lock Error**
-
-**Problem:**
-
-```
-fatal: Unable to create '.git/index.lock': File exists
-```
-
-**Cause:** A previous Git process didn’t finish, leaving a lock file.
-**Solution:** Removed the file manually using:
-
-```bash
-rm -f .git/index.lock
-```
-
-and ensured no Git process was running in the background.
-
----
-
-#### 4️⃣ **Username/Password Validation Not Working**
-
-**Problem:** Access was granted even for invalid users.
-**Cause:** Incorrect condition: `if username and password in password_list:`
-**Solution:** Fixed with:
-
-```python
-if username in password_list and password in password_list:
-```
-
-(or a proper mapping for secure validation).
-
----
 
 ### 🧩 **How to Run the Game**
 
