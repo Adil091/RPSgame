@@ -102,4 +102,41 @@ while True:
               print("5. Scissors beats Paper")
               print("6. Scissors loses to Rock")
               print("-------------------------------------------------")
-              
+            # if the user wants to see their lives
+            if rps == "display lives":
+              print("-------------------------------------------------")
+              print("Your Lives:", lives)
+              print("-------------------------------------------------")
+            # if the user wants to see the score
+            if rps == "display score":
+              print("-------------------------------------------------")
+              print("Your Score:", score)
+              print("-------------------------------------------------")
+            # if the user wants to see the draws
+            if rps == "display draws":
+              print("-------------------------------------------------")
+              print("Your Draws:", drew)
+              print("-------------------------------------------------")
+            # lives
+            if lives == 0 or rps == "test":
+              print("Thanks for playing")
+              print("You ran out of lives")
+              print("Your final score:", score)
+              print("Your final draws:", drew)
+              stop = input("Press Enter to stop playing...")
+              import time
+              time.sleep(3)
+            if computer_lives == 0:
+              print("Thanks for playing")
+              print("The computer ran out of lives,You won!")
+              print("Your score:", score)
+              print("Your draws:", drew)
+              stop = input("Press Enter to stop playing...")
+              import time
+              time.sleep(900)
+            #exit
+            if rps == "exit":
+              break
+    else:
+      print("Your username or password is incorrect.")
+      print("---------------------------------------")
