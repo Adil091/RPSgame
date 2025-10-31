@@ -9,12 +9,12 @@ while True:
       print("Passwords do not match. Please try again.")
   if password == password_confirm:
       print("Account created successfully!")
-      text_file = open("accounts.csv", "a")
+      text_file = open("accounts.txt", "a")
       # text_file.write(",")
       # text_file.write(username)
       # text_file.write(",")
       # text_file.write(password)
       # text_file.write("\n")
-      text_file.write(username + "," + password + "\n")
+      text_file.write(username + "\n" + password + "\n")
       text_file.close()
       break
