@@ -39,7 +39,7 @@ It runs entirely in the terminal and offers a nostalgic gaming experience while 
 #### **1️⃣ Clone the Repository**
 
 ```bash
-git clone https://github.com/<your-username>/RPSgame.git
+git clone https://github.com/Adil091/RPSgame.git
 cd RPSgame
 ```
 
