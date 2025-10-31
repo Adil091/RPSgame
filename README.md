@@ -1,7 +1,7 @@
 
 ## 🪨✋✂ Rock Paper Scissors Game 🎮
 
-### *A simple yet fun Python terminal game built by [Adil Tofiq Mulla](https://github.com/AdilTofiqMulla)*
+### *A simple yet fun Python terminal game built by [Adil ](https://github.com/adil091)*
 
 ---
 
